@@ -1,0 +1,469 @@
+body html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* Google Fonts */
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .ibm-plex-mono-thin {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 100;
+    font-style: normal;
+  }
+
+  /* Header */
+.div-header{
+    display: flex;
+    background-color: #5300C8;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 96px;
+    padding: 20px 0px 20px 0px;
+    width: 1355px;
+}
+
+.corazones{
+    width: 100x;
+    height: 50px;
+}
+
+.titulo-encabezado{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    color:#E5E5E5
+}
+
+/* Sección Card */
+.main-container{
+    display: flex;
+    flex-direction: row;
+    width: 1440px;
+}
+
+.main-titulo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    padding-bottom: 4%;
+}
+.products-container{
+    width: 678px;
+    height: 500px;
+    padding: 15px;
+    gap:20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+   }
+
+   .card{
+    background-color: #9747FF;
+    color: white;
+    width: calc(100%/4);
+    padding: 10px;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.products{
+    width: 758px;
+    height: 1115px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding: 40px;
+    gap: 40px;
+}
+
+.img-delete{
+    background-color: #9747FF;
+    width: 25px;
+    height: auto;
+    padding: 0%;
+    margin: 0%;
+    
+}
+
+.delete-button{
+    padding: 5;
+    margin: 5%;
+    border: #5300C8;
+    background-color:#9747FF;
+    
+}
+
+.card-container--value{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.precio-card{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20.8px;
+}
+
+.name-card{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19.5px;
+}
+
+.card-image{
+    width: 170px;
+    height: 170px;
+    border-radius: 5px;
+}
+
+
+
+/*Add product*/
+
+.add-product{
+    background-color: #FFFFFF;
+    width: 472px;
+    height: 517px;
+    padding: 40px;
+    gap: 40px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+.input-product{
+    width: 392px;
+    height: 58px;
+    border-radius: 50px;
+    margin: 5px;
+    padding-left: 5%;
+    border: 2px solid #03318C;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20.8;
+}
+
+
+.button-submit{
+width: 188px ;
+height: 52x ;
+border: 1px;
+padding: 16px;
+background-color: #03318C;
+font-weight: 400;
+font-size: 16px;
+color: #FFFFFF;
+border-radius: 15px;
+
+}
+.button-submit:hover{
+    background-color: #FFFFFF;
+    color: #03318C;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color:#FFFFFF;
+}
+
+.button-clear{
+    width: 188px;
+    height: 54px;
+    border: 1px;
+    padding: 16px;
+    background-color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    color: #03318C;
+    border-radius: 15px;
+    border: 2px solid #03318C;
+}
+
+.button-clear:hover{
+    background-color: #03318C;
+    color: #F5F5F5;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.add-p-tittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin-left: 14%;
+    margin-bottom: 3%;
+}
+
+/*Scroll personalizado */
+
+/* Estilo básico para toda la scrollbar */
+.products::-webkit-scrollbar {
+    width: 8px; /* Ajusta el ancho de la scrollbar */
+    scrollbar-width: thin;
+  }
+  
+  /* Estilo para la parte de la barra de desplazamiento */
+  .products::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color de fondo del track */
+    scrollbar-width: thin;
+  }
+  
+  /* Estilo para la barra de desplazamiento */
+  .products::-webkit-scrollbar-thumb {
+    background: #D6D6D6; /* Color de la barra */
+    border-radius: 10px; /* Bordes redondeados */
+    scrollbar-width: thin;
+  }
+  
+  /* Estilo cuando la barra es activada (hover) */
+  .products::-webkit-scrollbar-thumb:hover {
+    background: #D6D6D6; /* Color al pasar el mouse sobre la barra */
+    scrollbar-width: thin;  
+}
+  
+  /* Elimina las flechas de la scrollbar */
+  html .products::-webkit-scrollbar-button {
+    display: none; /* Oculta las flechas */
+  }
+  /* Estilo para la scrollbar en Firefox */
+  html {
+    scrollbar-width: thin; /* Reduce el ancho de la scrollbar */
+  }
+
+
+/* Footer */
+.footer-container{
+    background-color: #5300C8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-items: center;
+    color:#E5E5E5;
+    width: 1250px;
+    height: 70px;
+    padding: 64px;
+
+}
+
+.div-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+}
+
+.footer-p1{
+    font-size: 16px;
+    font-weight: 200;
+    line-height: 16px;
+}
+
+
+/* Media Query para vista mobile */
+
+@media only screen and (max-width: 412px){
+    body{
+        width: 412px;
+    }
+
+    .header{
+        width: 412px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .div-header{
+        width: 412px;
+        height: 56px;
+        background-color: red;
+    }
+    
+    .corazones{
+        width: 100px;
+        height: 26px;
+    }
+    .titulo-encabezado{
+        width: 250px;
+        height: 51px;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -6%;
+        
+    }
+    .main-container{
+        width: 412px;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main-titulo{
+        width: 408px;
+        height: 24px;
+        font-size: 18px;
+
+    }
+
+    form.form-container{
+        width: 400px;
+    }
+
+
+    section.products{
+        width: 412px;
+        padding: 0%;
+        margin: 0%;
+    }
+
+
+   
+
+    .products-container{
+        width: 412px;
+    }
+
+    .card{
+        width: 150px;
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .img-container{
+        width: 120px;
+    }
+
+    .card-image{
+        width: 148px;
+    }
+
+    .card-container--info .card-container--value {
+        width: 120px;
+    }
+
+    .add-product{
+        width: 412px;
+        align-items: center;
+        justify-content: center;
+        padding: 0%;
+        margin: 0%;
+
+    }
+
+    .add-p-tittle{
+        width: 350px;
+        height: 48px;
+    }
+    form .input-product{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5%;
+        width: 350px;
+        height: 40px;
+        margin-bottom: 3%;
+        padding-left: 3%;
+    }
+
+   
+
+ 
+    .button-container{
+        width: 355px;
+        height: 55px;
+        gap: 13px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 5%;
+    }
+    .submit{
+        width: 140px;
+        height: 45px;
+    }
+
+ .footer-container{
+    width: 412px;
+    padding: 0%;
+    margin: 0%;
+}
+
+.footer-container{
+    width: 412px;
+    
+}
+
+footer{
+    width: 412px;
+    padding: 0%;
+    margin:0%;
+    
+}
+
+footer .footer-container{
+    width: 412px;
+    
+}
+
+.div-footer{
+    width: 220px;
+    padding:0%;
+    margin: 0%;
+    
+    
+}
+.titulo-encabezado{
+    font-size: 12px;
+}
+.footer-p {
+    font-size: 12px;
+    width: 250px;
+    padding-right: 55%;
+    
+}
+
+.footer-p1{
+font-size: 12px;
+width: 250px;
+padding-right: 25%;
+}
+
+.ibm-plex-mono-thin{
+    padding: 0%;
+    margin: 0%;
+    width: 200px;
+    padding-rigth: 5%;
+}
+
+}

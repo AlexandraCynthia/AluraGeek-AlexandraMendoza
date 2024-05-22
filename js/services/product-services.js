@@ -15,8 +15,16 @@ const createProducts = (name, price, image)=>{
             price,
             image,
         })
-    }).then((res)=>res.json()).catch((err)=>console.log(err))
-}
+    }).then((res)=>{
+        if(!res.ok){
+            throw new Error("Error al crear producto");
+        }
+        return res.json();
+    }).catch((err)=>console.log(error));
+    };
+    
+    
+
 
 const deleteProducts = (id)=>{
     return fetch(`https://jsonserver2-0ht2.onrender.com/products/${id}`, {

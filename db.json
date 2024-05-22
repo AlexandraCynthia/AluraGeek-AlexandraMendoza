@@ -1,31 +1,31 @@
 {
   "products": [
     {
-      "id": "bc14",
+      "id": "1",
       "name": "Candy White",
       "price": "20",
       "image": "https://images.cdn1.buscalibre.com/fit-in/180x180/3b/15/3b1545b2bfc9497410d14b339eaec03a.jpg"
     },
     {
-      "id": "2f5c",
+      "id": "2",
       "name": "Kit Sailor Moon",
       "price": "45",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuxohRukwPqb8Q51Y_SxkvVeSpnyxizY5yMw&s"
     },
     {
-      "id": "079f",
+      "id": "3",
       "name": "Dragon Ball Games",
       "price": "145",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiifHXrXV8knu9LTBnDpVcFDpTrl1zXCL4RA&s"
     },
     {
-      "id": "78ad",
+      "id": "4",
       "name": "Muñeco Aries",
       "price": "120",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf-C_X_4YUSq4BGgwbczToflBi6N3tGSZxmQ&s"
     },
     {
-      "id": "9b31",
+      "id": "5",
       "name": "Muñeca Atena",
       "price": "42",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgfv82IuagZ-QNXUxoUsWsFjLS2KFxbZawgA&s"

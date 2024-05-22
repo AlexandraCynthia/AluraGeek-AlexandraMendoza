@@ -44,17 +44,13 @@ const handleDelete = async(id, cardElement)=>{
     }
 }
 
-
-
-
 const render = async()=>{
     try {
         const listProducts = await serviceProducts.productList();
 
         listProducts.forEach(product =>{
             productContainer.appendChild(createCard(product.name,product.price,product.image,product.id))});
-
-        
+      
     } catch (error) {
         console.log(error);
     }
@@ -67,10 +63,15 @@ form.addEventListener("submit", (event)=>{
     const price = document.querySelector("[data-price]").value;
     const image = document.querySelector("[data-image]").value;
 
-    serviceProducts.createProducts(name, price, image)
-    .then((res)=>console.log(res))
-    .catch((error)=>console.log(error));
-
+    try{
+        const newProduct = await serviceProducts.createProducts(name, price, image);
+        if(newProduct){
+            createCard(newProduct.name, newProduct.price, newProduct.image, newProduct.id);
+            form.reset();
+        }
+    }catch(error){
+        console.log(error);
+    }
 })
 
 

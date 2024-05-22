@@ -23,15 +23,16 @@ const deleteProducts = (id)=>{
         method: "DELETE",
         headers:{
             "Content-type": "application/json",
-        },
-        body: JSON.stringify({
-            id,
-       })
-    }).then((res)=>res.json()).catch((err)=>console.log(err))
+        }
+        
+    }).then((res)=>{
+        if(!res.ok){
+            throw new Error("Error al eliminar producto");
+        }
+        return res.json();
+    }).catch((err)=>console.log(err))
+    
 }
-
-
-
 
 export const serviceProducts = {
     productList,

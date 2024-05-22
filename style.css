@@ -326,6 +326,7 @@ border-radius: 15px;
         width: 412px;
         display: flex;
         flex-direction: column-reverse;
+        padding-bottom: 5%;
     }
     .main-titulo{
         width: 408px;

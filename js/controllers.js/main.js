@@ -2,6 +2,15 @@ import { serviceProducts } from "../services/product-services.js";
 
 const productContainer = document.querySelector("[data-product]");
 const form = document.querySelector("[data-form]");
+const loader = document.getElementById("loader");
+
+function showLoader(){
+    loader.classList.remove("hidden");
+}
+
+function hideLoader(){
+    loader.classList.add("hidden");
+}
 
 
 function createCard(name,price, image,id){
@@ -46,6 +55,7 @@ const handleDelete = async(id, cardElement)=>{
 
 const render = async()=>{
     try {
+        showLoader();
         const listProducts = await serviceProducts.productList();
 
         listProducts.forEach(product =>{
@@ -53,6 +63,8 @@ const render = async()=>{
       
     } catch (error) {
         console.log(error);
+    } finally{
+        hideLoader();
     }
 };
 
@@ -105,6 +117,7 @@ form.addEventListener("submit", async(event)=>{
         //Si se crea el producto exitosamente, crear la tarjeta y limpiar formulario
         if(newProduct){
             createCard(newProduct.name, newProduct.price, newProduct.image, newProduct.id);
+            alertify.success('Datos enviados');
             form.reset();
         }
     }catch(error){

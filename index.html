@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="loader-spiner.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Alertify -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.min.css"/>
     <title>AluraGeek</title>
 </head>
 <body class="press-start-2p-regular body" >
@@ -23,7 +27,9 @@
     <main class="main-container">
         <section class="products">
             <h1 class="main-titulo">MIS PRODUCTOS:</h1>
+            
             <div data-product class="products-container">
+                <div id="loader" class="loader"></div>
                 <!-- <div class="card">
                         <div class="img-container">
                             <img src="https://iberoperu.vtexassets.com/arquivos/ids/291456-500-auto?v=638512295677200000&width=500&height=auto&aspect=true" alt="img">
@@ -69,6 +75,7 @@
 
         <script src="js/controllers.js/main.js" type="module"></script>
         <script src="js/services/product-services.js" type="module"></script>
-
-</body>
+        <!-- Script de Alertify -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
+    </body>
 </html>

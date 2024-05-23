@@ -148,9 +148,12 @@ body html{
 .form-container{
     display: flex;
     flex-direction: column;
+    height: 500px;
+    gap: 15px
+    ;
 }
-.input-product{
-    width: 392px;
+ .input-product{
+    width: 290px !important;
     height: 58px;
     border-radius: 50px;
     margin: 5px;
@@ -161,6 +164,22 @@ body html{
     line-height: 20.8;
 }
 
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+    }
+
+    input[type=number] { -moz-appearance:textfield; }
+
+    .error-message{
+        color: red;
+        font-size: 10px;
+        display: block;
+        padding-left: 3%;
+        margin-top: -2%;
+
+    }
 
 .button-submit{
 width: 188px ;
@@ -291,19 +310,19 @@ border-radius: 15px;
 
 /* Media Query para vista mobile */
 
-@media only screen and (max-width: 412px){
+@media only screen and (max-width: 360px){
     body{
-        width: 412px;
+        width: 360px;
     }
 
     .header{
-        width: 412px;
+        width: 360px;
         padding: 0px;
         margin: 0px;
     }
 
     .div-header{
-        width: 412px;
+        width: 360px;
         height: 56px;
         background-color: #5300C8;
     }
@@ -323,38 +342,43 @@ border-radius: 15px;
         
     }
     .main-container{
-        width: 412px;
+        width: 360px;
         display: flex;
         flex-direction: column-reverse;
         padding-bottom: 5%;
     }
     .main-titulo{
-        width: 408px;
+        width: 360px;
         height: 24px;
         font-size: 18px;
 
     }
 
     form.form-container{
-        width: 400px;
+        width: 360px;
     }
 
+    .error-message{
+        color: red;
+        font-size: 8px;
+        display: block;
+        padding-left: 8%;
+        margin-top: -5%;
+    }
 
     section.products{
-        width: 412px;
+        width: 360px;
         padding: 0%;
         margin: 0%;
     }
 
 
-   
-
     .products-container{
-        width: 412px;
+        width: 340px;
     }
 
     .card{
-        width: 150px;
+        width: 120px;
         height: 230px;
         display: flex;
         flex-direction: column;
@@ -362,20 +386,24 @@ border-radius: 15px;
     }
 
     .img-container{
-        width: 120px;
+        width: 100px;
     }
 
     .card-image{
-        width: 148px;
+        width: 118px;
     }
 
     .card-container--info .card-container--value {
         width: 120px;
     }
 
+    section .add-product{
+        margin: 0%;
+        padding: 0%;
+    }
     .add-product{
-        width: 412px;
-        height: 412px;
+        width: 360px;
+        height: 400px;
         align-items: center;
         justify-content: center;
         padding: 0%;
@@ -384,7 +412,7 @@ border-radius: 15px;
     }
 
     .add-p-tittle{
-        width: 320px;
+        width: 270px;
         height: 48px;
         margin-top: 10%;
         padding-right: 20px;
@@ -399,9 +427,16 @@ border-radius: 15px;
         margin-bottom: 3%;
         padding-left: 3%;
     }
+    input[type=number]::-webkit-inner-spin-button, 
+    input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+    }
+
+    input[type=number] { -moz-appearance:textfield; }
 
        .button-container{
-        width: 355px;
+        width: 300px;
         height: 55px;
         gap: 13px;
         display: flex;
@@ -414,27 +449,27 @@ border-radius: 15px;
     }
 
  .footer-container{
-    width: 412px;
+    width: 360px;
     padding: 0%;
     margin: 0%;
 }
 
 .footer-container{
-    width: 412px;
+    width: 360px;
     height: 130px;
     background-color: #5300C8;
     
 }
 
 footer{
-    width: 412px;
+    width: 360px;
     padding: 0%;
     margin:0%;
     
 }
 
 footer .footer-container{
-    width: 412px;
+    width: 360px;
    
     
 }
